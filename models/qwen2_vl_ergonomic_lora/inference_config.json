@@ -1,0 +1,18 @@
+{
+  "model_type": "qwen2_vl",
+  "base_model": "Qwen/Qwen2-VL-2B-Instruct",
+  "lora_adapter": "models\\qwen2_vl_ergonomic_lora",
+  "max_new_tokens": 512,
+  "temperature": 0.1,
+  "top_p": 0.9,
+  "system_prompt": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist. Evaluate the input worker keyframe and authoritative Phase 3 telemetry, and output strict JSON with keys: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence.",
+  "required_output_schema": [
+    "posture",
+    "risk_factors",
+    "ergonomic_observation",
+    "root_cause",
+    "recommended_action",
+    "confidence"
+  ],
+  "deterministic_biomechanics_authoritative": true
+}

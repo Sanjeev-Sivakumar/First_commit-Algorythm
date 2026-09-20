@@ -1,0 +1,326 @@
+[
+  {
+    "id": "ERGO-001",
+    "category": "UPRIGHT",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-001_upright.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-001.\nAuthoritative Telemetry:\n- Posture Detected: UPRIGHT\n- Trunk Flexion: 4.5 deg\n- Knee Angle: 175.0 deg\n- Load Moment Arm: 15.0 cm\n- L5/S1 Lumbar Torque: 22.0 Nm\n- Spinal Compression: 920.0 N\n- Awkward Duty Cycle: 8.5%\n- Repetition Rate: 0.0 reps/min\n- Cumulative Risk Score: 12.0 (LOW)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"UPRIGHT\",\n  \"risk_factors\": [\n    \"Slight prolonged static standing posture\"\n  ],\n  \"ergonomic_observation\": \"The operator maintains an upright neutral spinal alignment with negligible torso flexion (4.5 deg). L5/S1 spinal compressive loading remains well within safe physiological limits (920 N vs 3400 N NIOSH threshold).\",\n  \"root_cause\": \"Workstation height is well-aligned with elbow height for inspection tasks.\",\n  \"recommended_action\": \"Provide anti-fatigue floor matting to alleviate static leg and plantar pressure.\",\n  \"confidence\": 0.98\n}"
+      }
+    ]
+  },
+  {
+    "id": "ERGO-002",
+    "category": "UPRIGHT",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-002_upright.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-002.\nAuthoritative Telemetry:\n- Posture Detected: UPRIGHT\n- Trunk Flexion: 6.5 deg\n- Knee Angle: 173.0 deg\n- Load Moment Arm: 15.0 cm\n- L5/S1 Lumbar Torque: 27.0 Nm\n- Spinal Compression: 960.0 N\n- Awkward Duty Cycle: 11.5%\n- Repetition Rate: 0.0 reps/min\n- Cumulative Risk Score: 15.0 (LOW)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"UPRIGHT\",\n  \"risk_factors\": [\n    \"Slight prolonged static standing posture\"\n  ],\n  \"ergonomic_observation\": \"The operator maintains an upright neutral spinal alignment with negligible torso flexion (6.5 deg). L5/S1 spinal compressive loading remains well within safe physiological limits (960 N vs 3400 N NIOSH threshold).\",\n  \"root_cause\": \"Workstation height is well-aligned with elbow height for inspection tasks.\",\n  \"recommended_action\": \"Provide anti-fatigue floor matting to alleviate static leg and plantar pressure.\",\n  \"confidence\": 0.98\n}"
+      }
+    ]
+  },
+  {
+    "id": "ERGO-003",
+    "category": "BENDING",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-003_bending.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-003.\nAuthoritative Telemetry:\n- Posture Detected: BENDING\n- Trunk Flexion: 38.0 deg\n- Knee Angle: 168.0 deg\n- Load Moment Arm: 35.0 cm\n- L5/S1 Lumbar Torque: 88.0 Nm\n- Spinal Compression: 2150.0 N\n- Awkward Duty Cycle: 72.0%\n- Repetition Rate: 6.0 reps/min\n- Cumulative Risk Score: 62.0 (HIGH)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"BENDING\",\n  \"risk_factors\": [\n    \"Pronounced torso forward flexion (38.0 deg)\",\n    \"Substantial trunk center-of-mass moment arm exceeding 30 cm\",\n    \"Elevated L5/S1 spinal compressive force\"\n  ],\n  \"ergonomic_observation\": \"The worker is stooping forward (38.0 deg flexion) without bending the knees (168.0 deg), resulting in significant posterior chain strain and an elevated lumbar moment arm of 88.0 Nm.\",\n  \"root_cause\": \"Parts staging bin is positioned below knuckle height (approx. 45 cm off floor), forcing continuous forward spinal inclination.\",\n  \"recommended_action\": \"Elevate staging bin to waist level (75-90 cm) using an adjustable mechanical stand.\",\n  \"confidence\": 0.95\n}"
+      }
+    ]
+  },
+  {
+    "id": "ERGO-004",
+    "category": "BENDING",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-004_bending.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-004.\nAuthoritative Telemetry:\n- Posture Detected: BENDING\n- Trunk Flexion: 44.0 deg\n- Knee Angle: 164.0 deg\n- Load Moment Arm: 35.0 cm\n- L5/S1 Lumbar Torque: 102.0 Nm\n- Spinal Compression: 2350.0 N\n- Awkward Duty Cycle: 82.0%\n- Repetition Rate: 8.0 reps/min\n- Cumulative Risk Score: 70.0 (HIGH)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"BENDING\",\n  \"risk_factors\": [\n    \"Pronounced torso forward flexion (44.0 deg)\",\n    \"Substantial trunk center-of-mass moment arm exceeding 30 cm\",\n    \"Elevated L5/S1 spinal compressive force\"\n  ],\n  \"ergonomic_observation\": \"The worker is stooping forward (44.0 deg flexion) without bending the knees (164.0 deg), resulting in significant posterior chain strain and an elevated lumbar moment arm of 102.0 Nm.\",\n  \"root_cause\": \"Parts staging bin is positioned below knuckle height (approx. 45 cm off floor), forcing continuous forward spinal inclination.\",\n  \"recommended_action\": \"Elevate staging bin to waist level (75-90 cm) using an adjustable mechanical stand.\",\n  \"confidence\": 0.95\n}"
+      }
+    ]
+  },
+  {
+    "id": "ERGO-005",
+    "category": "LIFTING",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-005_lifting.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-005.\nAuthoritative Telemetry:\n- Posture Detected: LIFTING\n- Trunk Flexion: 32.0 deg\n- Knee Angle: 130.0 deg\n- Load Moment Arm: 42.0 cm\n- L5/S1 Lumbar Torque: 145.0 Nm\n- Spinal Compression: 2950.0 N\n- Awkward Duty Cycle: 68.0%\n- Repetition Rate: 8.5 reps/min\n- Cumulative Risk Score: 68.0 (HIGH)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"LIFTING\",\n  \"risk_factors\": [\n    \"Extended load distance from spine (42.0 cm)\",\n    \"Simultaneous trunk flexion (32.0 deg) and moderate knee bend\",\n    \"Spinal compressive force approaching NIOSH action limit (2950 N)\"\n  ],\n  \"ergonomic_observation\": \"The operator is lifting a parcel with hands extended away from the torso (42.0 cm), amplifying the load moment arm and producing 145.0 Nm of lumbar moment.\",\n  \"root_cause\": \"Deep conveyor clearance barrier prevents worker from keeping the load close to the body.\",\n  \"recommended_action\": \"Modify conveyor lip edge and train worker to hug objects closer to body center before lifting.\",\n  \"confidence\": 0.94\n}"
+      }
+    ]
+  },
+  {
+    "id": "ERGO-006",
+    "category": "LIFTING",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-006_lifting.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-006.\nAuthoritative Telemetry:\n- Posture Detected: LIFTING\n- Trunk Flexion: 36.0 deg\n- Knee Angle: 122.0 deg\n- Load Moment Arm: 46.0 cm\n- L5/S1 Lumbar Torque: 165.0 Nm\n- Spinal Compression: 3200.0 N\n- Awkward Duty Cycle: 74.0%\n- Repetition Rate: 10.5 reps/min\n- Cumulative Risk Score: 74.0 (HIGH)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"LIFTING\",\n  \"risk_factors\": [\n    \"Extended load distance from spine (46.0 cm)\",\n    \"Simultaneous trunk flexion (36.0 deg) and moderate knee bend\",\n    \"Spinal compressive force approaching NIOSH action limit (3200 N)\"\n  ],\n  \"ergonomic_observation\": \"The operator is lifting a parcel with hands extended away from the torso (46.0 cm), amplifying the load moment arm and producing 165.0 Nm of lumbar moment.\",\n  \"root_cause\": \"Deep conveyor clearance barrier prevents worker from keeping the load close to the body.\",\n  \"recommended_action\": \"Modify conveyor lip edge and train worker to hug objects closer to body center before lifting.\",\n  \"confidence\": 0.94\n}"
+      }
+    ]
+  },
+  {
+    "id": "ERGO-007",
+    "category": "AWKWARD_POSTURE",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-007_awkward_posture.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-007.\nAuthoritative Telemetry:\n- Posture Detected: BENDING\n- Trunk Flexion: 48.0 deg\n- Knee Angle: 155.0 deg\n- Load Moment Arm: 50.0 cm\n- L5/S1 Lumbar Torque: 175.0 Nm\n- Spinal Compression: 3250.0 N\n- Awkward Duty Cycle: 86.0%\n- Repetition Rate: 5.0 reps/min\n- Cumulative Risk Score: 78.0 (HIGH)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"BENDING\",\n  \"risk_factors\": [\n    \"Severe torso forward flexion (48.0 deg) past acceptable ergonomics limit\",\n    \"Extreme horizontal reach distance (> 50 cm)\",\n    \"High biomechanical trunk torque impulse\"\n  ],\n  \"ergonomic_observation\": \"Worker is over-reaching horizontally across a wide table (48.0 deg flexion), placing severe cantilever bending stress on the lumbar erector spinae muscles.\",\n  \"root_cause\": \"Worktable depth is 110 cm without a rotating turntable or rear access point.\",\n  \"recommended_action\": \"Install a manual rotating turntable or reduce table reach envelope to under 45 cm.\",\n  \"confidence\": 0.96\n}"
+      }
+    ]
+  },
+  {
+    "id": "ERGO-008",
+    "category": "AWKWARD_POSTURE",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-008_awkward_posture.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-008.\nAuthoritative Telemetry:\n- Posture Detected: BENDING\n- Trunk Flexion: 53.0 deg\n- Knee Angle: 150.0 deg\n- Load Moment Arm: 55.0 cm\n- L5/S1 Lumbar Torque: 200.0 Nm\n- Spinal Compression: 3450.0 N\n- Awkward Duty Cycle: 91.0%\n- Repetition Rate: 5.0 reps/min\n- Cumulative Risk Score: 83.0 (HIGH)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"BENDING\",\n  \"risk_factors\": [\n    \"Severe torso forward flexion (53.0 deg) past acceptable ergonomics limit\",\n    \"Extreme horizontal reach distance (> 50 cm)\",\n    \"High biomechanical trunk torque impulse\"\n  ],\n  \"ergonomic_observation\": \"Worker is over-reaching horizontally across a wide table (53.0 deg flexion), placing severe cantilever bending stress on the lumbar erector spinae muscles.\",\n  \"root_cause\": \"Worktable depth is 110 cm without a rotating turntable or rear access point.\",\n  \"recommended_action\": \"Install a manual rotating turntable or reduce table reach envelope to under 45 cm.\",\n  \"confidence\": 0.96\n}"
+      }
+    ]
+  },
+  {
+    "id": "ERGO-009",
+    "category": "REPETITIVE_MOTION",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-009_repetitive_motion.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-009.\nAuthoritative Telemetry:\n- Posture Detected: BENDING\n- Trunk Flexion: 35.0 deg\n- Knee Angle: 160.0 deg\n- Load Moment Arm: 38.0 cm\n- L5/S1 Lumbar Torque: 85.0 Nm\n- Spinal Compression: 2100.0 N\n- Awkward Duty Cycle: 94.0%\n- Repetition Rate: 18.0 reps/min\n- Cumulative Risk Score: 82.0 (HIGH)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"BENDING\",\n  \"risk_factors\": [\n    \"Excessive repetition rate (18.0 cycles/min > 12/min threshold)\",\n    \"Extremely high awkward posture duty cycle (> 90%)\",\n    \"Cumulative soft-tissue creep and micro-trauma accumulation\"\n  ],\n  \"ergonomic_observation\": \"High-cadence repetitive picking at 18.0 cycles/min with 94% awkward duty cycle leaves zero recovery interval for muscular and intervertebral tissue regeneration.\",\n  \"root_cause\": \"Pacing enforced by fixed-speed automated sorting chute with no buffer queue.\",\n  \"recommended_action\": \"Enforce 15-minute job rotation intervals and introduce an accumulation buffer conveyor.\",\n  \"confidence\": 0.95\n}"
+      }
+    ]
+  },
+  {
+    "id": "ERGO-010",
+    "category": "REPETITIVE_MOTION",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-010_repetitive_motion.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-010.\nAuthoritative Telemetry:\n- Posture Detected: BENDING\n- Trunk Flexion: 38.0 deg\n- Knee Angle: 155.0 deg\n- Load Moment Arm: 38.0 cm\n- L5/S1 Lumbar Torque: 95.0 Nm\n- Spinal Compression: 2250.0 N\n- Awkward Duty Cycle: 96.0%\n- Repetition Rate: 22.0 reps/min\n- Cumulative Risk Score: 86.0 (HIGH)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"BENDING\",\n  \"risk_factors\": [\n    \"Excessive repetition rate (22.0 cycles/min > 12/min threshold)\",\n    \"Extremely high awkward posture duty cycle (> 90%)\",\n    \"Cumulative soft-tissue creep and micro-trauma accumulation\"\n  ],\n  \"ergonomic_observation\": \"High-cadence repetitive picking at 22.0 cycles/min with 94% awkward duty cycle leaves zero recovery interval for muscular and intervertebral tissue regeneration.\",\n  \"root_cause\": \"Pacing enforced by fixed-speed automated sorting chute with no buffer queue.\",\n  \"recommended_action\": \"Enforce 15-minute job rotation intervals and introduce an accumulation buffer conveyor.\",\n  \"confidence\": 0.95\n}"
+      }
+    ]
+  },
+  {
+    "id": "ERGO-011",
+    "category": "HIGH_RISK_LIFTING",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-011_high_risk_lifting.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-011.\nAuthoritative Telemetry:\n- Posture Detected: LIFTING\n- Trunk Flexion: 46.0 deg\n- Knee Angle: 140.0 deg\n- Load Moment Arm: 52.0 cm\n- L5/S1 Lumbar Torque: 210.0 Nm\n- Spinal Compression: 3950.0 N\n- Awkward Duty Cycle: 89.0%\n- Repetition Rate: 7.0 reps/min\n- Cumulative Risk Score: 92.0 (DANGEROUS)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"LIFTING\",\n  \"risk_factors\": [\n    \"Spinal compressive force (3950 N) strictly violates the NIOSH Action Limit (3400 N)\",\n    \"Heavy manual load (18.0 kg) lifted with extended lever arm (52.0 cm)\",\n    \"Dangerous lumbar moment (210.0 Nm) exceeding tissue tolerance\"\n  ],\n  \"ergonomic_observation\": \"CRITICAL HAZARD: Operative executes an unassisted lift of an 18 kg payload with an extended horizontal reach and 46 deg torso flexion. Spinal compression reaches 3950 N, creating acute risk of lumbar disc herniation.\",\n  \"root_cause\": \"Heavy bulk parts crates handled manually off low floor pallets without vacuum lifters.\",\n  \"recommended_action\": \"MANDATORY IMMEDIATE INTERVENTION: Implement dual-person lift protocol immediately and install an overhead pneumatic zero-gravity crane lifter.\",\n  \"confidence\": 0.99\n}"
+      }
+    ]
+  },
+  {
+    "id": "ERGO-012",
+    "category": "HIGH_RISK_LIFTING",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are KineticGuard Vision-Language AI, an expert industrial ergonomist specializing in biomechanics and OSHA/NIOSH standards. Analyze the provided worker keyframe and authoritative Phase 3 telemetry, and output strict structured JSON matching the schema: posture, risk_factors, ergonomic_observation, root_cause, recommended_action, confidence."
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "data\\ergonomic_dataset\\images\\ERGO-012_high_risk_lifting.jpg"
+          },
+          {
+            "type": "text",
+            "text": "Analyze worker posture and ergonomic risk for keyframe ERGO-012.\nAuthoritative Telemetry:\n- Posture Detected: LIFTING\n- Trunk Flexion: 50.0 deg\n- Knee Angle: 130.0 deg\n- Load Moment Arm: 56.0 cm\n- L5/S1 Lumbar Torque: 235.0 Nm\n- Spinal Compression: 4300.0 N\n- Awkward Duty Cycle: 93.0%\n- Repetition Rate: 7.0 reps/min\n- Cumulative Risk Score: 95.0 (DANGEROUS)\n\nProvide the structured ergonomic diagnosis JSON."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"posture\": \"LIFTING\",\n  \"risk_factors\": [\n    \"Spinal compressive force (4300 N) strictly violates the NIOSH Action Limit (3400 N)\",\n    \"Heavy manual load (22.0 kg) lifted with extended lever arm (56.0 cm)\",\n    \"Dangerous lumbar moment (235.0 Nm) exceeding tissue tolerance\"\n  ],\n  \"ergonomic_observation\": \"CRITICAL HAZARD: Operative executes an unassisted lift of an 18 kg payload with an extended horizontal reach and 46 deg torso flexion. Spinal compression reaches 4300 N, creating acute risk of lumbar disc herniation.\",\n  \"root_cause\": \"Heavy bulk parts crates handled manually off low floor pallets without vacuum lifters.\",\n  \"recommended_action\": \"MANDATORY IMMEDIATE INTERVENTION: Implement dual-person lift protocol immediately and install an overhead pneumatic zero-gravity crane lifter.\",\n  \"confidence\": 0.99\n}"
+      }
+    ]
+  }
+]

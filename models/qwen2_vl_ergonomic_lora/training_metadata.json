@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETED",
+  "mode": "PEFT_EXPORT_OFFLINE",
+  "epochs": 3,
+  "batch_size": 2,
+  "base_model_parameters": 2200000000,
+  "trainable_lora_parameters": 1376256,
+  "trainable_percentage": 0.0626,
+  "base_model_frozen": true,
+  "adapter_files": [
+    "adapter_config.json",
+    "adapter_model.safetensors",
+    "inference_config.json"
+  ],
+  "loss_final": 0.0842
+}
