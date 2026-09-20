@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+.pytest_cache/
+
+# Environment and secrets (CRITICAL: Do NOT commit secrets)
+.env
+*.pem
+*.key
+
+# Voice generation and audio files (Excluded per instructions)
+voice.wav
+voice.py
+generate_voice_wav.py
+test_voice_durations.py
+kineticguard_voice/
+*.wav
+*.mp3
+
+# Temporary / Large Archives & Uploads
+data/uploaded_*
+video_env_1_anonymized.zip
+output/test_*
+output/model.tar.gz
+
+# IDE and OS
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
