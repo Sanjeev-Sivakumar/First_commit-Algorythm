@@ -1,0 +1,10 @@
+{
+  "worker_id": "W-LINK-77",
+  "station_id": "STATION-NORTH",
+  "last_decision": "ESCALATE",
+  "last_risk_score": 75.0,
+  "peak_compression_n": 3450.0,
+  "updated_at": "2026-09-20T10:48:58.310469+00:00",
+  "_id": "W-LINK-77",
+  "@timestamp": "2026-09-20T10:48:58.310478+00:00"
+}

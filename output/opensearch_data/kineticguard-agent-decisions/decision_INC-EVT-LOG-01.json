@@ -1,0 +1,18 @@
+{
+  "incident_id": "INC-EVT-LOG-01",
+  "decision": "LOG",
+  "worker_identity": {
+    "worker_id": "W-LOG-01",
+    "station_id": "STATION-01",
+    "camera_id": "camera_01"
+  },
+  "authoritative_biomechanics": {
+    "cumulative_risk_score": 30.0,
+    "peak_spinal_compression_n": 1400.0
+  },
+  "recommended_action": "Continue routine monitoring",
+  "privacy_guard": "ACTIVE",
+  "visual_deidentified": true,
+  "_id": "decision_INC-EVT-LOG-01",
+  "@timestamp": "2026-09-20T10:48:58.302941+00:00"
+}

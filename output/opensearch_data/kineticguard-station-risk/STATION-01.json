@@ -1,0 +1,9 @@
+{
+  "station_id": "STATION-01",
+  "camera_id": "camera_01",
+  "last_decision": "ESCALATE",
+  "last_risk_score": 78.0,
+  "updated_at": "2026-09-20T10:49:11.219648+00:00",
+  "_id": "STATION-01",
+  "@timestamp": "2026-09-20T10:49:11.219657+00:00"
+}

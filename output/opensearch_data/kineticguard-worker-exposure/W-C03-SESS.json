@@ -1,0 +1,10 @@
+{
+  "worker_id": "W-C03-SESS",
+  "station_id": "STATION-03",
+  "last_decision": "REVIEW/NOTIFY",
+  "last_risk_score": 57.6,
+  "peak_compression_n": 2200.0,
+  "updated_at": "2026-09-19T19:50:14.437337+00:00",
+  "_id": "W-C03-SESS",
+  "@timestamp": "2026-09-19T19:50:14.437351+00:00"
+}

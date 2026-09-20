@@ -1,0 +1,73 @@
+{
+  "system": "KineticGuard Qwen2-VL Multimodal Ergonomics",
+  "phase": "Phase 4",
+  "total_incidents_analyzed": 2,
+  "analyses": [
+    {
+      "incident_id": "INC-20260919-CAMERA_01-001",
+      "worker_id": "WORKER-1042",
+      "camera_id": "camera_01",
+      "station_id": "STATION-GATE-A",
+      "keyframe_path": "output\\vlm_analysis\\keyframes\\INC-20260919-CAMERA_01-001_keyframe.jpg",
+      "authoritative_metrics": {
+        "cumulative_risk_score": 73.8,
+        "risk_level": "HIGH",
+        "duration_sec": 1.4,
+        "awkward_duty_cycle_pct": 93.5,
+        "peak_lumbar_torque_nm": 99.2,
+        "peak_spinal_compression_n": 2311.3,
+        "peak_trunk_flexion_deg": 40.6,
+        "repetition_rate_per_min": 19.5,
+        "repetition_count": 1
+      },
+      "vlm_analysis": {
+        "posture": "BENDING",
+        "risk_factors": [
+          "Elevated L5/S1 spinal compression (2311 N) nearing safety action limit",
+          "Pronounced torso forward flexion (40.6 deg) without knee counterbalance",
+          "Elevated peak lumbar moment (99.2 Nm at L5/S1 vertebral junction)",
+          "Excessive awkward duty cycle (93.5%) in non-neutral posture",
+          "High repetition rate (19.5 cycles/min) with inadequate inter-cycle recovery time"
+        ],
+        "ergonomic_observation": "Visual inspection captures the operator in a sustained forward stoop posture (40.6 deg flexion) with knees nearly straight. The worker sustains high awkward duty cycle exposure (93.5%), imposing continuous cantilever tension on the lumbar erector spinae group.",
+        "root_cause": "Workpiece staging surface at STATION-GATE-A is situated below waist height (approx. 50 cm from floor level), compelling operatives into repetitive stoop bending during picking cycles.",
+        "recommended_action": "Elevate container staging by 35-45 cm using an adjustable hydraulic scissor lift table to eliminate forward stooping and enforce a 20-minute mandatory task rotation protocol.",
+        "confidence": 0.94
+      },
+      "evaluation_engine": "Qwen2-VL Ergonomic VLM (Offline Mode)"
+    },
+    {
+      "incident_id": "INC-20260919-CAMERA_02-001",
+      "worker_id": "WORKER-0219",
+      "camera_id": "camera_02",
+      "station_id": "STATION-AISLE-4",
+      "keyframe_path": "output\\vlm_analysis\\keyframes\\INC-20260919-CAMERA_02-001_keyframe.jpg",
+      "authoritative_metrics": {
+        "cumulative_risk_score": 73.9,
+        "risk_level": "HIGH",
+        "duration_sec": 2.72,
+        "awkward_duty_cycle_pct": 93.7,
+        "peak_lumbar_torque_nm": 99.2,
+        "peak_spinal_compression_n": 2311.3,
+        "peak_trunk_flexion_deg": 40.6,
+        "repetition_rate_per_min": 38.0,
+        "repetition_count": 2
+      },
+      "vlm_analysis": {
+        "posture": "BENDING",
+        "risk_factors": [
+          "Elevated L5/S1 spinal compression (2311 N) nearing safety action limit",
+          "Pronounced torso forward flexion (40.6 deg) without knee counterbalance",
+          "Elevated peak lumbar moment (99.2 Nm at L5/S1 vertebral junction)",
+          "Excessive awkward duty cycle (93.7%) in non-neutral posture",
+          "High repetition rate (38.0 cycles/min) with inadequate inter-cycle recovery time"
+        ],
+        "ergonomic_observation": "Visual inspection captures the operator in a sustained forward stoop posture (40.6 deg flexion) with knees nearly straight. The worker sustains high awkward duty cycle exposure (93.7%), imposing continuous cantilever tension on the lumbar erector spinae group.",
+        "root_cause": "Workpiece staging surface at STATION-AISLE-4 is situated below waist height (approx. 50 cm from floor level), compelling operatives into repetitive stoop bending during picking cycles.",
+        "recommended_action": "Elevate container staging by 35-45 cm using an adjustable hydraulic scissor lift table to eliminate forward stooping and enforce a 20-minute mandatory task rotation protocol.",
+        "confidence": 0.94
+      },
+      "evaluation_engine": "Qwen2-VL Ergonomic VLM (Offline Mode)"
+    }
+  ]
+}

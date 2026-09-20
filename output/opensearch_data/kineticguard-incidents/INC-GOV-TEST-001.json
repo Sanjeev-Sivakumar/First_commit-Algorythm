@@ -1,0 +1,22 @@
+{
+  "incident_id": "INC-GOV-TEST-001",
+  "worker_identity": {
+    "worker_id": "W-GOV-01",
+    "station_id": "STATION-01",
+    "camera_id": "camera_01"
+  },
+  "biomechanical_exposure": {
+    "peak_lumbar_torque_nm": 95.0,
+    "peak_spinal_compression_n": 3500.0,
+    "awkward_duty_cycle_pct": 85.0,
+    "repetition_rate_per_min": 7.0
+  },
+  "risk_assessment": {
+    "cumulative_risk_score": 78.0,
+    "risk_level": "HIGH"
+  },
+  "privacy_guard": "ACTIVE",
+  "visual_deidentified": true,
+  "_id": "INC-GOV-TEST-001",
+  "@timestamp": "2026-09-20T10:49:11.215329+00:00"
+}

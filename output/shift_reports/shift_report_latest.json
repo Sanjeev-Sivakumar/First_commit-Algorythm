@@ -1,0 +1,141 @@
+{
+  "shift_id": "SHIFT-20260919-01",
+  "timestamp": "2026-09-19T21:38:02.452553+00:00",
+  "status": "ACTIVE_DATA",
+  "message": "Shift report generated from 12 real incidents and 20 monitored operative passports.",
+  "executive_summary": {
+    "workers_monitored_count": 20,
+    "stations_monitored_count": 7,
+    "total_incidents_recorded": 12,
+    "high_risk_workers": [
+      "W-C01-OS-HIST",
+      "W-C01-SESS",
+      "W-C02-SESS",
+      "W-C03-SESS",
+      "W-ESC-01",
+      "W-LINK-77",
+      "W-OP-02",
+      "W-REV-01",
+      "W-TEST-01"
+    ],
+    "high_risk_stations": [
+      "STATION-01",
+      "STATION-02",
+      "STATION-03",
+      "STATION-OS-01"
+    ],
+    "shift_ergonomic_safety_score": 37.1
+  },
+  "top_ergonomic_risk_factors": [
+    "Awkward torso forward flexion (> 25 deg)",
+    "Static forward shoulder reach without arm support",
+    "High repetitive handling cadence (> 12 reps/min)",
+    "Lumbar spinal compression exceeding physiological comfort threshold"
+  ],
+  "closed_loop_interventions": {
+    "total_interventions_recorded": 14,
+    "effective_interventions": 4,
+    "waiting_for_sufficient_data": 10,
+    "effectiveness_rate_pct": 28.6
+  },
+  "station_risk_breakdown": [
+    {
+      "station_id": "STATION-01",
+      "risk_level": "ACTION_REQUIRED",
+      "mean_risk": 72.8,
+      "peak_compression_n": 1955.5,
+      "dominant_posture": "BENDING",
+      "incident_count": 6
+    },
+    {
+      "station_id": "STATION-02",
+      "risk_level": "ACTION_REQUIRED",
+      "mean_risk": 71.6,
+      "peak_compression_n": 1955.5,
+      "dominant_posture": "BENDING",
+      "incident_count": 3
+    },
+    {
+      "station_id": "STATION-03",
+      "risk_level": "HIGH",
+      "mean_risk": 57.6,
+      "peak_compression_n": 2421.7,
+      "dominant_posture": "BENDING",
+      "incident_count": 1
+    },
+    {
+      "station_id": "STATION-C02-NORTH",
+      "risk_level": "LOW",
+      "mean_risk": 0.0,
+      "peak_compression_n": 0.0,
+      "dominant_posture": "BENDING",
+      "incident_count": 1
+    },
+    {
+      "station_id": "STATION-E2E",
+      "risk_level": "LOW",
+      "mean_risk": 0.0,
+      "peak_compression_n": 0.0,
+      "dominant_posture": "BENDING",
+      "incident_count": 1
+    },
+    {
+      "station_id": "STATION-NORTH",
+      "risk_level": "LOW",
+      "mean_risk": 0.0,
+      "peak_compression_n": 0.0,
+      "dominant_posture": "BENDING",
+      "incident_count": 0
+    },
+    {
+      "station_id": "STATION-OS-01",
+      "risk_level": "HIGH",
+      "mean_risk": 64.5,
+      "peak_compression_n": 0.0,
+      "dominant_posture": "BENDING",
+      "incident_count": 0
+    }
+  ],
+  "worker_passport_highlights": [
+    {
+      "worker_id": "W-C01-OS-HIST",
+      "station": "Unassigned",
+      "status": "ACTION_REQUIRED",
+      "fatigue_index": 72.0,
+      "mean_risk": 0.0
+    },
+    {
+      "worker_id": "W-C01-SESS",
+      "station": "STATION-01",
+      "status": "ACTION_REQUIRED",
+      "fatigue_index": 82.6,
+      "mean_risk": 71.3
+    },
+    {
+      "worker_id": "W-C01-TEST",
+      "station": "STATION-01",
+      "status": "HEALTHY",
+      "fatigue_index": 10.0,
+      "mean_risk": 0.0
+    },
+    {
+      "worker_id": "W-C02-DYNAMIC-SES",
+      "station": "STATION-C02-NORTH",
+      "status": "HEALTHY",
+      "fatigue_index": 10.0,
+      "mean_risk": 0.0
+    },
+    {
+      "worker_id": "W-C02-SESS",
+      "station": "STATION-02",
+      "status": "ACTION_REQUIRED",
+      "fatigue_index": 99.3,
+      "mean_risk": 71.6
+    }
+  ],
+  "prioritized_corrective_actions": [
+    "Deploy scissor lift tables at stations with repeated trunk flexion below 45 cm.",
+    "Enforce mandatory 20-minute task rotation for workers in ACTION_REQUIRED status.",
+    "Introduce 5-minute extension stretching micro-breaks for high-cadence sorting stations."
+  ]
+}

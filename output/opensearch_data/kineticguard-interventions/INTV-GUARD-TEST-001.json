@@ -1,0 +1,14 @@
+{
+  "intervention_id": "INTV-GUARD-TEST-001",
+  "incident_id": "INC-GUARD-001",
+  "worker_id": "W-GUARD-01",
+  "station_id": "STATION-01",
+  "status": "APPLIED",
+  "pre_intervention_metrics": {
+    "cumulative_risk_score": 72.0
+  },
+  "_id": "INTV-GUARD-TEST-001",
+  "@timestamp": "2026-09-20T10:48:58.313150+00:00",
+  "effectiveness_status": "WAITING_FOR_SUFFICIENT_DATA",
+  "frames_observed": 5
+}

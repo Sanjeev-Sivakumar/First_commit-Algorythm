@@ -1,0 +1,23 @@
+{
+  "incident_id": "INC-TEST-PRIVACY-OS-001",
+  "worker_identity": {
+    "worker_id": "W-PRIV-OS",
+    "station_id": "STATION-01",
+    "camera_id": "camera_01"
+  },
+  "biomechanical_exposure": {
+    "peak_spinal_compression_n": 2200.0,
+    "peak_lumbar_torque_nm": 76.0
+  },
+  "risk_assessment": {
+    "cumulative_risk_score": 58.0,
+    "risk_level": "MODERATE"
+  },
+  "visual_evidence": {
+    "keyframe_path": "output/incidents/keyframes/INC-TEST-001_keyframe.jpg"
+  },
+  "privacy_guard": "ACTIVE",
+  "visual_deidentified": true,
+  "_id": "INC-TEST-PRIVACY-OS-001",
+  "@timestamp": "2026-09-20T10:49:11.195010+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "intervention_id": "INTV-INC-P5-E2E-001",
+  "incident_id": "INC-P5-E2E-001",
+  "worker_id": "W-E2E-01",
+  "station_id": "STATION-E2E",
+  "camera_id": "camera_01",
+  "action_type": "MANDATORY_ROTATION_AND_REST",
+  "action_description": "Implement scissor lift table or vacuum hoist; enforce team two-person lifting for loads over 15 kg.",
+  "status": "APPLIED",
+  "effectiveness_status": "WAITING_FOR_SUFFICIENT_DATA",
+  "applied_at": "2026-09-20T10:48:58.323488+00:00",
+  "pre_intervention_metrics": {
+    "cumulative_risk_score": 78.0,
+    "peak_lumbar_torque_nm": 92.0,
+    "peak_spinal_compression_n": 3450.0,
+    "awkward_duty_cycle_pct": 82.0
+  },
+  "post_intervention_metrics": null,
+  "is_effective": null,
+  "risk_reduction_pct": null,
+  "@timestamp": "2026-09-20T10:48:58.323492+00:00",
+  "_id": "INTV-INC-P5-E2E-001"
+}

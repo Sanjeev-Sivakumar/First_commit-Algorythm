@@ -1,0 +1,31 @@
+{
+  "intervention_id": "INTV-INC-20260920-CAMERA_02-001",
+  "incident_id": "INC-20260920-CAMERA_02-001",
+  "worker_id": "W-C02-SESS",
+  "station_id": "STATION-02",
+  "camera_id": "camera_02",
+  "action_type": "MANDATORY_ROTATION_AND_REST",
+  "action_description": "Implement scissor lift table or vacuum hoist; enforce team two-person lifting for loads over 15 kg.",
+  "status": "RESOLVED",
+  "effectiveness_status": "EFFECTIVE",
+  "applied_at": "2026-09-19T19:50:08.716339+00:00",
+  "pre_intervention_metrics": {
+    "cumulative_risk_score": 71.6,
+    "peak_lumbar_torque_nm": 75.0,
+    "peak_spinal_compression_n": 2200.0,
+    "awkward_duty_cycle_pct": 60.0
+  },
+  "post_intervention_metrics": {
+    "cumulative_risk_score": 31.4,
+    "peak_lumbar_torque_nm": 110.7,
+    "mean_spinal_compression_n": 2470.3,
+    "awkward_duty_cycle_pct": 100.0,
+    "frames_analyzed": 30
+  },
+  "is_effective": true,
+  "risk_reduction_pct": 56.2,
+  "@timestamp": "2026-09-19T19:50:08.716342+00:00",
+  "_id": "INTV-INC-20260920-CAMERA_02-001",
+  "frames_observed": 5,
+  "evaluated_at": "2026-09-19T19:50:09.523354+00:00"
+}

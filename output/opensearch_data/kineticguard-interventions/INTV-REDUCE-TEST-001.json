@@ -1,0 +1,25 @@
+{
+  "intervention_id": "INTV-REDUCE-TEST-001",
+  "incident_id": "INC-REDUCE-001",
+  "worker_id": "W-REDUCE-01",
+  "station_id": "STATION-01",
+  "status": "RESOLVED",
+  "pre_intervention_metrics": {
+    "cumulative_risk_score": 75.0,
+    "peak_lumbar_torque_nm": 95.0,
+    "peak_spinal_compression_n": 2400.0
+  },
+  "_id": "INTV-REDUCE-TEST-001",
+  "@timestamp": "2026-09-20T10:48:58.313806+00:00",
+  "effectiveness_status": "EFFECTIVE",
+  "is_effective": true,
+  "risk_reduction_pct": 53.5,
+  "post_intervention_metrics": {
+    "cumulative_risk_score": 34.9,
+    "peak_lumbar_torque_nm": 42.0,
+    "mean_spinal_compression_n": 1250.0,
+    "awkward_duty_cycle_pct": 0.0,
+    "frames_analyzed": 25
+  },
+  "evaluated_at": "2026-09-20T10:48:58.314172+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "worker_id": "W-C02-DYNAMIC-SES",
+  "station_id": "STATION-C02-NORTH",
+  "last_decision": "REVIEW/NOTIFY",
+  "last_risk_score": 62.0,
+  "peak_compression_n": 2400.0,
+  "updated_at": "2026-09-20T10:22:23.384775+00:00",
+  "_id": "W-C02-DYNAMIC-SES",
+  "@timestamp": "2026-09-20T10:22:23.384785+00:00"
+}

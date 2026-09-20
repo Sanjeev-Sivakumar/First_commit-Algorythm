@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "system": "KineticGuard Incident Engine (Live Build It)",
+    "phase": "Phase 3",
+    "schema_version": "kineticguard.strands.v1",
+    "camera_id": "camera_02",
+    "worker_id": "W-C02-SESS",
+    "station_id": "STATION-02",
+    "session_id": "sess_1789847403_camera_02",
+    "window_seconds": 20.0,
+    "incident_threshold": 45.0,
+    "total_incidents_count": 1,
+    "is_estimated_model_indicator": true,
+    "disclaimer": "Biomechanical indicators (torque/compression) are modeled estimates and not direct clinical diagnostic measurements."
+  },
+  "incidents": [
+    {
+      "event_id": "INC-20260920-CAMERA_02-001",
+      "incident_id": "INC-20260920-CAMERA_02-001",
+      "worker_id": "W-C02-SESS",
+      "camera_id": "camera_02",
+      "station_id": "STATION-02",
+      "session_id": "sess_1789847403_camera_02",
+      "source": "video_camera_02.mp4",
+      "timestamp": "2026-09-19T19:50:05.096555+00:00",
+      "start_time_sec": 0.32,
+      "end_time_sec": 1.76,
+      "duration_sec": 1.44,
+      "risk_level": "HIGH",
+      "cumulative_risk_score": 71.6,
+      "exposure_metrics": {
+        "window_duration_sec": 1.12,
+        "frame_count": 29,
+        "duration_upright_sec": 0.08,
+        "duration_bending_sec": 1.08,
+        "duration_squatting_sec": 0.0,
+        "duration_lifting_sec": 0.0,
+        "awkward_duty_cycle_pct": 96.3,
+        "repetition_count": 1,
+        "rep_rate_per_min": 53.6,
+        "mean_lumbar_torque_nm": 73.2,
+        "peak_lumbar_torque_nm": 77.8,
+        "mean_spinal_compression_n": 1862.9,
+        "peak_spinal_compression_n": 1955.5,
+        "mean_trunk_flexion_deg": 25.8,
+        "peak_trunk_flexion_deg": 27.0,
+        "mean_phase2_risk_score": 21.5,
+        "cumulative_torque_impulse_nms": 84.9,
+        "is_estimated_model_indicator": true,
+        "disclaimer": "Temporal metrics and torque impulses are modeled biomechanical estimates and not direct medical or clinical measurements."
+      },
+      "contributing_factors": [
+        "Awkward torso forward flexion (peak 27.0 deg)",
+        "High awkward posture duty cycle (96.3% in bending/lifting)",
+        "Repetitive motion frequency (53.6 reps/min, 1 cycles)"
+      ],
+      "recommended_action": "Enforce mandatory task rotation (rotate worker every 20 minutes to non-manual sorting); limit continuous lifting rate to < 4 lifts/minute.",
+      "keyframe_path": "output\\incidents\\keyframes\\INC-20260920-CAMERA_02-001_keyframe.jpg",
+      "keyframe_frame_index": 28,
+      "is_estimated_model_indicator": true,
+      "disclaimer": "Biomechanical indicators (torque/compression) are modeled estimates and not direct clinical measurements.",
+      "strands_packet": {
+        "schema_version": "kineticguard.strands.v1",
+        "event_type": "ERGONOMIC_INCIDENT",
+        "agent_target": "strands_ergonomic_safety_agent",
+        "incident_id": "INC-20260920-CAMERA_02-001",
+        "event_id": "INC-20260920-CAMERA_02-001",
+        "session_id": "sess_1789847403_camera_02",
+        "source": "video_camera_02.mp4",
+        "timestamp_iso": "2026-09-19T19:50:05.096555+00:00",
+        "worker_identity": {
+          "worker_id": "W-C02-SESS",
+          "station_id": "STATION-02",
+          "camera_id": "camera_02"
+        },
+        "temporal_window": {
+          "start_time_sec": 0.32,
+          "end_time_sec": 1.76,
+          "duration_sec": 1.44
+        },
+        "risk_assessment": {
+          "cumulative_risk_score": 71.6,
+          "risk_level": "HIGH",
+          "contributing_factors": [
+            "Awkward torso forward flexion (peak 27.0 deg)",
+            "High awkward posture duty cycle (96.3% in bending/lifting)",
+            "Repetitive motion frequency (53.6 reps/min, 1 cycles)"
+          ],
+          "recommended_action": "Enforce mandatory task rotation (rotate worker every 20 minutes to non-manual sorting); limit continuous lifting rate to < 4 lifts/minute."
+        },
+        "biomechanical_exposure": {
+          "is_estimated_model_indicator": true,
+          "disclaimer": "Biomechanical indicators (torque/compression) are modeled estimates and not direct clinical measurements.",
+          "awkward_duty_cycle_pct": 96.3,
+          "repetition_rate_per_min": 53.6,
+          "peak_lumbar_torque_nm": 77.8,
+          "peak_spinal_compression_n": 1955.5,
+          "cumulative_torque_impulse_nms": 84.9
+        },
+        "visual_evidence": {
+          "keyframe_path": "output\\incidents\\keyframes\\INC-20260920-CAMERA_02-001_keyframe.jpg",
+          "keyframe_frame_index": 28
+        }
+      }
+    }
+  ]
+}

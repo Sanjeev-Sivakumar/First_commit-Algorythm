@@ -1,0 +1,10 @@
+{
+  "worker_id": "W-ESC-01",
+  "station_id": "STATION-03",
+  "last_decision": "ESCALATE",
+  "last_risk_score": 82.0,
+  "peak_compression_n": 3550.0,
+  "updated_at": "2026-09-20T10:48:58.307182+00:00",
+  "_id": "W-ESC-01",
+  "@timestamp": "2026-09-20T10:48:58.307191+00:00"
+}

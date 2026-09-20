@@ -1,0 +1,53 @@
+{
+  "schema_version": "kineticguard.strands.v1",
+  "event_type": "ERGONOMIC_INCIDENT_BATCH",
+  "camera_id": "camera_02",
+  "station_id": "STATION-02",
+  "worker_id": "W-C02-SESS",
+  "session_id": "sess_1789847403_camera_02",
+  "incidents": [
+    {
+      "schema_version": "kineticguard.strands.v1",
+      "event_type": "ERGONOMIC_INCIDENT",
+      "agent_target": "strands_ergonomic_safety_agent",
+      "incident_id": "INC-20260920-CAMERA_02-001",
+      "event_id": "INC-20260920-CAMERA_02-001",
+      "session_id": "sess_1789847403_camera_02",
+      "source": "video_camera_02.mp4",
+      "timestamp_iso": "2026-09-19T19:50:05.096555+00:00",
+      "worker_identity": {
+        "worker_id": "W-C02-SESS",
+        "station_id": "STATION-02",
+        "camera_id": "camera_02"
+      },
+      "temporal_window": {
+        "start_time_sec": 0.32,
+        "end_time_sec": 1.76,
+        "duration_sec": 1.44
+      },
+      "risk_assessment": {
+        "cumulative_risk_score": 71.6,
+        "risk_level": "HIGH",
+        "contributing_factors": [
+          "Awkward torso forward flexion (peak 27.0 deg)",
+          "High awkward posture duty cycle (96.3% in bending/lifting)",
+          "Repetitive motion frequency (53.6 reps/min, 1 cycles)"
+        ],
+        "recommended_action": "Enforce mandatory task rotation (rotate worker every 20 minutes to non-manual sorting); limit continuous lifting rate to < 4 lifts/minute."
+      },
+      "biomechanical_exposure": {
+        "is_estimated_model_indicator": true,
+        "disclaimer": "Biomechanical indicators (torque/compression) are modeled estimates and not direct clinical measurements.",
+        "awkward_duty_cycle_pct": 96.3,
+        "repetition_rate_per_min": 53.6,
+        "peak_lumbar_torque_nm": 77.8,
+        "peak_spinal_compression_n": 1955.5,
+        "cumulative_torque_impulse_nms": 84.9
+      },
+      "visual_evidence": {
+        "keyframe_path": "output\\incidents\\keyframes\\INC-20260920-CAMERA_02-001_keyframe.jpg",
+        "keyframe_frame_index": 28
+      }
+    }
+  ]
+}

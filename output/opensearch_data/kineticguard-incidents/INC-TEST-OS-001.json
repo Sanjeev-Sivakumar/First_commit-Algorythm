@@ -1,0 +1,9 @@
+{
+  "incident_id": "INC-TEST-OS-001",
+  "worker_id": "W-TEST-01",
+  "station_id": "STATION-01",
+  "cumulative_risk_score": 74.2,
+  "risk_level": "HIGH",
+  "_id": "INC-TEST-OS-001",
+  "@timestamp": "2026-09-20T10:48:58.069208+00:00"
+}

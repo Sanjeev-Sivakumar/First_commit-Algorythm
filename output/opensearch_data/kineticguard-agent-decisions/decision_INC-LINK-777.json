@@ -1,0 +1,18 @@
+{
+  "incident_id": "INC-LINK-777",
+  "decision": "ESCALATE",
+  "worker_identity": {
+    "worker_id": "W-LINK-77",
+    "station_id": "STATION-NORTH",
+    "camera_id": "camera_02"
+  },
+  "authoritative_biomechanics": {
+    "cumulative_risk_score": 75.0,
+    "peak_spinal_compression_n": 3450.0
+  },
+  "recommended_action": "Enforce scissor lift table use",
+  "privacy_guard": "ACTIVE",
+  "visual_deidentified": true,
+  "_id": "decision_INC-LINK-777",
+  "@timestamp": "2026-09-20T10:48:58.310085+00:00"
+}

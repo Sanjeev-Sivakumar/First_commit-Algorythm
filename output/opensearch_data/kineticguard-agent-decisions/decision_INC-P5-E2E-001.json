@@ -1,0 +1,136 @@
+{
+  "schema_version": "kineticguard.strands.v1",
+  "incident_id": "INC-P5-E2E-001",
+  "session_id": "sess_camera_01",
+  "worker_identity": {
+    "worker_id": "W-E2E-01",
+    "station_id": "STATION-E2E",
+    "camera_id": "camera_01"
+  },
+  "decision": "ESCALATE",
+  "policy_result": {
+    "decision": "ESCALATE",
+    "agent_proposed_action": "ESCALATE",
+    "cedar_action": "Action::\"ESCALATE\"",
+    "cedar_decision": "Decision.Allow",
+    "allowed": true,
+    "policy_rule_id": "policy0",
+    "enforced_action": "ESCALATE",
+    "fallback_action": "N/A (Action Authorized)",
+    "diagnostics": {
+      "reasons": [
+        "policy0"
+      ],
+      "errors": []
+    },
+    "policy_gate": "PASSED_ESCALATE_POLICY",
+    "evaluated_context": {
+      "cumulative_risk": 78,
+      "spinal_compression_n": 3450,
+      "awkward_duty_cycle_pct": 82,
+      "rep_rate_per_min": 6,
+      "fatigue_index": 44,
+      "has_failed_prior_intervention": false
+    }
+  },
+  "reasoning": "Cedar policy gate evaluated ESCALATE (Allowed: True). Visual observation confirms: Worker W-E2E-01 is observed in acute forward trunk inclination with arms fully extended forward.. Root cause: Heavy load transfer from floor/pallet level without mechanical lift assist.. Biomechanical ground truth confirms cumulative risk 78.0/100 (DANGEROUS) with spinal compression 3450 N and 82.0% awkward duty cycle.",
+  "recommended_action": "Implement scissor lift table or vacuum hoist; enforce team two-person lifting for loads over 15 kg.",
+  "gemini_analysis": {
+    "source": "deterministic_expert_reasoner",
+    "model": "rule_based_vision_expert",
+    "privacy_guard": "ACTIVE",
+    "visual_deidentified": true,
+    "ergonomic_observation": "Worker W-E2E-01 is observed in acute forward trunk inclination with arms fully extended forward.",
+    "root_cause": "Heavy load transfer from floor/pallet level without mechanical lift assist.",
+    "risk_explanation": "Severe spinal compression (3450 N) exceeds NIOSH Action Limit (3,400 N), risking acute disc herniation.",
+    "recommended_corrective_action": "Implement scissor lift table or vacuum hoist; enforce team two-person lifting for loads over 15 kg.",
+    "confidence": 0.96
+  },
+  "authoritative_biomechanics": {
+    "cumulative_risk_score": 78.0,
+    "risk_level": "DANGEROUS",
+    "peak_lumbar_torque_nm": 92.0,
+    "peak_spinal_compression_n": 3450.0,
+    "awkward_duty_cycle_pct": 82.0,
+    "repetition_rate_per_min": 6.5,
+    "is_estimated_model_indicator": true,
+    "disclaimer": "Biomechanical indicators are modeled estimates and not direct clinical diagnostic measurements."
+  },
+  "tools_consulted": {
+    "worker_exposure": {
+      "worker_id": "W-E2E-01",
+      "source": "opensearch_indexed_profile",
+      "total_incidents": 1,
+      "fatigue_index": 44.5,
+      "mean_lumbar_torque_nm": 92.0,
+      "peak_spinal_compression_n": 3450.0,
+      "risk_trend": "ELEVATED",
+      "last_seen_iso": "2026-09-20T10:48:58.314954+00:00"
+    },
+    "station_risk": {
+      "station_id": "STATION-E2E",
+      "source": "opensearch_station_index",
+      "total_incidents": 1,
+      "mean_risk_score": 78.0,
+      "highest_compression_n": 3450.0,
+      "dominant_posture": "BENDING",
+      "active_camera_id": "camera_01"
+    },
+    "intervention_history": {
+      "worker_id": "W-E2E-01",
+      "source": "opensearch_intervention_index",
+      "intervention_count": 1,
+      "history": [
+        {
+          "intervention_id": "INTV-INC-P5-E2E-001",
+          "incident_id": "INC-P5-E2E-001",
+          "worker_id": "W-E2E-01",
+          "station_id": "STATION-E2E",
+          "camera_id": "camera_01",
+          "action_type": "MANDATORY_ROTATION_AND_REST",
+          "action_description": "Implement scissor lift table or vacuum hoist; enforce team two-person lifting for loads over 15 kg.",
+          "status": "APPLIED",
+          "effectiveness_status": "WAITING_FOR_SUFFICIENT_DATA",
+          "applied_at": "2026-09-20T10:22:26.835715+00:00",
+          "pre_intervention_metrics": {
+            "cumulative_risk_score": 78.0,
+            "peak_lumbar_torque_nm": 92.0,
+            "peak_spinal_compression_n": 3450.0,
+            "awkward_duty_cycle_pct": 82.0
+          },
+          "post_intervention_metrics": null,
+          "is_effective": null,
+          "risk_reduction_pct": null,
+          "@timestamp": "2026-09-20T10:22:26.835738+00:00",
+          "_id": "INTV-INC-P5-E2E-001"
+        }
+      ],
+      "has_failed_prior_intervention": false
+    },
+    "incident_telemetry": {
+      "incident_id": "INC-P5-E2E-001",
+      "source": "opensearch_incidents_index",
+      "cumulative_risk_score": 78.0,
+      "risk_level": "DANGEROUS",
+      "peak_lumbar_torque_nm": 92.0,
+      "peak_spinal_compression_n": 3450.0,
+      "awkward_duty_cycle_pct": 82.0,
+      "repetition_rate_per_min": 6.5,
+      "contributing_factors": []
+    },
+    "risk_forecast": {
+      "worker_id": "W-E2E-01",
+      "source": "opensearch_exposure_forecaster",
+      "current_fatigue_index": 44.5,
+      "projected_fatigue_30m": 78.8,
+      "estimated_minutes_to_fatigue_limit": 15.5,
+      "fatigue_risk_level": "HIGH",
+      "recommended_break_min": 15
+    }
+  },
+  "timestamp_iso": "2026-09-20T10:48:58.320026+00:00",
+  "privacy_guard": "ACTIVE",
+  "visual_deidentified": true,
+  "_id": "decision_INC-P5-E2E-001",
+  "@timestamp": "2026-09-20T10:48:58.320056+00:00"
+}

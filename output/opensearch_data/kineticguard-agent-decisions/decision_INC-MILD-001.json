@@ -1,0 +1,112 @@
+{
+  "schema_version": "kineticguard.strands.v1",
+  "incident_id": "INC-MILD-001",
+  "session_id": "sess_camera_01",
+  "worker_identity": {
+    "worker_id": "W-MILD-01",
+    "station_id": "STATION-01",
+    "camera_id": "camera_01"
+  },
+  "decision": "LOG",
+  "policy_result": {
+    "decision": "LOG",
+    "agent_proposed_action": "LOG",
+    "cedar_action": "Action::\"LOG\"",
+    "cedar_decision": "Decision.Allow",
+    "allowed": true,
+    "policy_rule_id": "policy0",
+    "enforced_action": "LOG",
+    "fallback_action": "N/A (Action Authorized)",
+    "diagnostics": {
+      "reasons": [
+        "policy0"
+      ],
+      "errors": []
+    },
+    "policy_gate": "PASSED_LOG_POLICY",
+    "evaluated_context": {
+      "cumulative_risk": 35,
+      "spinal_compression_n": 1600,
+      "awkward_duty_cycle_pct": 20,
+      "rep_rate_per_min": 4,
+      "fatigue_index": 34,
+      "has_failed_prior_intervention": false
+    }
+  },
+  "reasoning": "Cedar policy gate evaluated LOG (Allowed: True). Visual observation confirms: Worker W-MILD-01 displays intermittent bending and reaching during manual sorting.. Root cause: Repetitive item retrieval from peripheral bins requiring lateral reach.. Biomechanical ground truth confirms cumulative risk 35.0/100 (LOW) with spinal compression 1600 N and 20.0% awkward duty cycle.",
+  "recommended_action": "Reorganize high-frequency bins within primary arm reach radius (< 45 cm) and rotate tasks every 30 minutes.",
+  "gemini_analysis": {
+    "source": "deterministic_expert_reasoner",
+    "model": "rule_based_vision_expert",
+    "privacy_guard": "ACTIVE",
+    "visual_deidentified": true,
+    "ergonomic_observation": "Worker W-MILD-01 displays intermittent bending and reaching during manual sorting.",
+    "root_cause": "Repetitive item retrieval from peripheral bins requiring lateral reach.",
+    "risk_explanation": "Moderate cumulative load (35.0/100) with repeated cycles (4.0 reps/min).",
+    "recommended_corrective_action": "Reorganize high-frequency bins within primary arm reach radius (< 45 cm) and rotate tasks every 30 minutes.",
+    "confidence": 0.88
+  },
+  "authoritative_biomechanics": {
+    "cumulative_risk_score": 35.0,
+    "risk_level": "LOW",
+    "peak_lumbar_torque_nm": 75.0,
+    "peak_spinal_compression_n": 1600.0,
+    "awkward_duty_cycle_pct": 20.0,
+    "repetition_rate_per_min": 4.0,
+    "is_estimated_model_indicator": true,
+    "disclaimer": "Biomechanical indicators are modeled estimates and not direct clinical diagnostic measurements."
+  },
+  "tools_consulted": {
+    "worker_exposure": {
+      "worker_id": "W-MILD-01",
+      "source": "opensearch_indexed_profile",
+      "total_incidents": 1,
+      "fatigue_index": 33.8,
+      "mean_lumbar_torque_nm": 75.0,
+      "peak_spinal_compression_n": 1600.0,
+      "risk_trend": "ELEVATED",
+      "last_seen_iso": "2026-09-20T10:22:23.373076+00:00"
+    },
+    "station_risk": {
+      "station_id": "STATION-01",
+      "source": "opensearch_station_index",
+      "total_incidents": 1,
+      "mean_risk_score": 35.0,
+      "highest_compression_n": 1600.0,
+      "dominant_posture": "UPRIGHT",
+      "active_camera_id": "camera_01"
+    },
+    "intervention_history": {
+      "worker_id": "W-MILD-01",
+      "source": "opensearch_intervention_index",
+      "intervention_count": 0,
+      "history": [],
+      "has_failed_prior_intervention": false
+    },
+    "incident_telemetry": {
+      "incident_id": "INC-MILD-001",
+      "source": "opensearch_incidents_index",
+      "cumulative_risk_score": 35.0,
+      "risk_level": "LOW",
+      "peak_lumbar_torque_nm": 75.0,
+      "peak_spinal_compression_n": 1600.0,
+      "awkward_duty_cycle_pct": 20.0,
+      "repetition_rate_per_min": 4.0,
+      "contributing_factors": []
+    },
+    "risk_forecast": {
+      "worker_id": "W-MILD-01",
+      "source": "opensearch_exposure_forecaster",
+      "current_fatigue_index": 33.8,
+      "projected_fatigue_30m": 45.8,
+      "estimated_minutes_to_fatigue_limit": 57.8,
+      "fatigue_risk_level": "MODERATE",
+      "recommended_break_min": 5
+    }
+  },
+  "timestamp_iso": "2026-09-20T10:22:23.374979+00:00",
+  "privacy_guard": "ACTIVE",
+  "visual_deidentified": true,
+  "_id": "decision_INC-MILD-001",
+  "@timestamp": "2026-09-20T10:22:23.375000+00:00"
+}

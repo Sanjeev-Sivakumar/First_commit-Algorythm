@@ -1,0 +1,10 @@
+{
+  "worker_id": "W-LOG-01",
+  "station_id": "STATION-01",
+  "last_decision": "LOG",
+  "last_risk_score": 30.0,
+  "peak_compression_n": 1400.0,
+  "updated_at": "2026-09-20T10:48:58.303242+00:00",
+  "_id": "W-LOG-01",
+  "@timestamp": "2026-09-20T10:48:58.303252+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "intervention_id": "INTV-INC-EVT-REV-01",
+  "incident_id": "INC-EVT-REV-01",
+  "worker_id": "W-REV-01",
+  "station_id": "STATION-02",
+  "camera_id": "camera_02",
+  "action_type": "SUPERVISOR_REVIEW",
+  "action_description": "Supervisor station review and task rotation",
+  "status": "APPLIED",
+  "effectiveness_status": "WAITING_FOR_SUFFICIENT_DATA",
+  "applied_at": "2026-09-20T10:48:58.306293+00:00",
+  "pre_intervention_metrics": {
+    "cumulative_risk_score": 58.0,
+    "peak_lumbar_torque_nm": 75.0,
+    "peak_spinal_compression_n": 2200.0,
+    "awkward_duty_cycle_pct": 60.0
+  },
+  "post_intervention_metrics": null,
+  "is_effective": null,
+  "risk_reduction_pct": null,
+  "@timestamp": "2026-09-20T10:48:58.306298+00:00",
+  "_id": "INTV-INC-EVT-REV-01"
+}

@@ -1,0 +1,10 @@
+{
+  "worker_id": "W-TRUTH-01",
+  "station_id": "STATION-02",
+  "last_decision": "REVIEW/NOTIFY",
+  "last_risk_score": 68.2,
+  "peak_compression_n": 2250.0,
+  "updated_at": "2026-09-20T10:22:23.366581+00:00",
+  "_id": "W-TRUTH-01",
+  "@timestamp": "2026-09-20T10:22:23.366593+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "station_id": "STATION-OS-01",
+  "total_incidents": 8,
+  "mean_risk_score": 64.5,
+  "highest_compression_n": 2900.0,
+  "dominant_posture": "BENDING",
+  "_id": "STATION-OS-01",
+  "@timestamp": "2026-09-20T10:48:58.302469+00:00"
+}

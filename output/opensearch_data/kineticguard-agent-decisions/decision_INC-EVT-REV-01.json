@@ -1,0 +1,18 @@
+{
+  "incident_id": "INC-EVT-REV-01",
+  "decision": "REVIEW/NOTIFY",
+  "worker_identity": {
+    "worker_id": "W-REV-01",
+    "station_id": "STATION-02",
+    "camera_id": "camera_02"
+  },
+  "authoritative_biomechanics": {
+    "cumulative_risk_score": 58.0,
+    "peak_spinal_compression_n": 2200.0
+  },
+  "recommended_action": "Supervisor station review and task rotation",
+  "privacy_guard": "ACTIVE",
+  "visual_deidentified": true,
+  "_id": "decision_INC-EVT-REV-01",
+  "@timestamp": "2026-09-20T10:48:58.303884+00:00"
+}

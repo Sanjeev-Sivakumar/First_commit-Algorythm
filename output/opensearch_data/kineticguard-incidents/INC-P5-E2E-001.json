@@ -1,0 +1,23 @@
+{
+  "schema_version": "kineticguard.strands.v1",
+  "incident_id": "INC-P5-E2E-001",
+  "worker_identity": {
+    "worker_id": "W-E2E-01",
+    "station_id": "STATION-E2E",
+    "camera_id": "camera_01"
+  },
+  "biomechanical_exposure": {
+    "peak_lumbar_torque_nm": 92.0,
+    "peak_spinal_compression_n": 3450.0,
+    "awkward_duty_cycle_pct": 82.0,
+    "repetition_rate_per_min": 6.5
+  },
+  "risk_assessment": {
+    "cumulative_risk_score": 78.0,
+    "risk_level": "DANGEROUS"
+  },
+  "privacy_guard": "ACTIVE",
+  "visual_deidentified": true,
+  "_id": "INC-P5-E2E-001",
+  "@timestamp": "2026-09-20T10:48:58.314624+00:00"
+}

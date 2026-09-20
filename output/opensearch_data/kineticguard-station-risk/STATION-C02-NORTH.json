@@ -1,0 +1,9 @@
+{
+  "station_id": "STATION-C02-NORTH",
+  "camera_id": "camera_02",
+  "last_decision": "REVIEW/NOTIFY",
+  "last_risk_score": 62.0,
+  "updated_at": "2026-09-20T10:22:23.385059+00:00",
+  "_id": "STATION-C02-NORTH",
+  "@timestamp": "2026-09-20T10:22:23.385067+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "worker_id": "W-C01-OS-HIST",
+  "total_incidents": 5,
+  "fatigue_index": 72.0,
+  "mean_lumbar_torque_nm": 88.0,
+  "peak_spinal_compression_n": 2400.0,
+  "risk_trend": "CRITICAL",
+  "_id": "W-C01-OS-HIST",
+  "@timestamp": "2026-09-20T10:48:58.302051+00:00"
+}

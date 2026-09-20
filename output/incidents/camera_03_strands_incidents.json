@@ -1,0 +1,54 @@
+{
+  "schema_version": "kineticguard.strands.v1",
+  "event_type": "ERGONOMIC_INCIDENT_BATCH",
+  "camera_id": "camera_03",
+  "station_id": "STATION-03",
+  "worker_id": "W-C03-SESS",
+  "session_id": "sess_1789847409_camera_03",
+  "incidents": [
+    {
+      "schema_version": "kineticguard.strands.v1",
+      "event_type": "ERGONOMIC_INCIDENT",
+      "agent_target": "strands_ergonomic_safety_agent",
+      "incident_id": "INC-20260920-CAMERA_03-001",
+      "event_id": "INC-20260920-CAMERA_03-001",
+      "session_id": "sess_1789847409_camera_03",
+      "source": "video_camera_03.mp4",
+      "timestamp_iso": "2026-09-19T19:50:10.793317+00:00",
+      "worker_identity": {
+        "worker_id": "W-C03-SESS",
+        "station_id": "STATION-03",
+        "camera_id": "camera_03"
+      },
+      "temporal_window": {
+        "start_time_sec": 0.04,
+        "end_time_sec": 1.76,
+        "duration_sec": 1.72
+      },
+      "risk_assessment": {
+        "cumulative_risk_score": 57.6,
+        "risk_level": "MODERATE",
+        "contributing_factors": [
+          "Elevated spinal compression (2422 N) approaching safety threshold",
+          "Awkward torso forward flexion (peak 26.6 deg)",
+          "High awkward posture duty cycle (100.0% in bending/lifting)",
+          "Elevated peak lumbar moment (100.0 Nm at L5/S1)"
+        ],
+        "recommended_action": "Mandate immediate 3-5 minute micro-break with spinal extension stretching; conduct on-site ergonomic workstation assessment."
+      },
+      "biomechanical_exposure": {
+        "is_estimated_model_indicator": true,
+        "disclaimer": "Biomechanical indicators (torque/compression) are modeled estimates and not direct clinical measurements.",
+        "awkward_duty_cycle_pct": 100.0,
+        "repetition_rate_per_min": 0.0,
+        "peak_lumbar_torque_nm": 100.0,
+        "peak_spinal_compression_n": 2421.7,
+        "cumulative_torque_impulse_nms": 101.1
+      },
+      "visual_evidence": {
+        "keyframe_path": "output\\incidents\\keyframes\\INC-20260920-CAMERA_03-001_keyframe.jpg",
+        "keyframe_frame_index": 25
+      }
+    }
+  ]
+}
